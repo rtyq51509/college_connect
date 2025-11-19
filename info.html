@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Information Page</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<header class="header">
+ <div class="header-top">
+ <img src="logo_of_college.png" alt="logo of college"/>
+ <h1>International Technical College - Portal</h1>
+ </div>
+ <nav class="nav">
+ <a href="home.html">Home</a>
+ <a href="home.html">Logout</a>
+ </nav>
+</header>
+
+<main class="content2">
+ <h2>Information</h2>
+ 
+ <div class="info-row">
+ <select id="menu" onchange="loadData()">
+ <option value="">-- Choose an option --</option>
+ <option value="teachers">Teachers Info</option>
+ <option value="students">Students Info</option>
+ </select>
+
+ <button class="right-logout" onclick="location.href='home.html'">Logout</button>
+ </div>
+
+ <div id="result" style="margin-top:20px;"></div>
+</main>
+
+<footer class="footer">
+ <p>@2025 Developed by Fatimah Hadi</p>
+</footer>
+
+<script>
+function loadData() {
+    let choice = document.getElementById("menu").value;
+
+    if (choice === "") {
+        document.getElementById("result").innerHTML = "";
+        return;
+    }
+    // AJAX request
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "info.php?type=" + choice, true);
+    xhr.onload = function() {
+        document.getElementById("result").innerHTML = this.responseText;
+    }
+    xhr.send();
+}
+</script>
+
+</body>
+</html>

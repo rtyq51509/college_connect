@@ -1,0 +1,193 @@
+body { /* Page body styles */
+font-family: Arial; /* Set font */
+margin: 0; /* Remove default margin */
+}
+.header { /* Header section */
+background: #003399; /* Blue background */
+color: white; /* White text */
+padding: 20px; /* Inner spacing */
+display: flex; /* Flexbox layout */
+align-items: center; /* Center items vertically */
+justify-content: space-between; /* Space between items */
+flex-wrap: wrap; /* Wrap when needed */
+}
+.header-top { /* Header top area */
+display: flex; /* Flexbox layout */
+align-items: center; /* Vertically center */
+gap: 30px; /* Space between items */
+}
+img { /* Logo image */
+width: 60px; /* Image width */
+height: auto; /* Keep aspect ratio */
+}
+.nav { /* Navigation bar */
+display: flex; /* Horizontal layout */
+margin:10px; /* Outer margin */
+}
+.nav a{ /* Nav links */
+margin: 10px; /* Space around links */
+padding: 14px; /* Inner padding */
+border:none; /* Remove border */
+text-decoration: none; /* No underline */
+border-radius: 12px; /* Rounded corners */
+background: #e0e5ec; /* Light background */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+cursor: pointer; /* Pointer cursor */
+font-weight: bold; /* Bold text */
+transition: 0.3s ease; /* Smooth hover effect */
+color: #000080; /* Dark blue text */
+width: 100px; /* Fixed width */
+}
+.nav a:hover { /* Hover effect for nav links */
+background: #d1d9e6; /* Lighter background */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+transform: scale(0.97); /* Slight shrink */
+}
+.content { /* Main content layout */
+width: 100%; /* Full width */
+display: grid; /* Grid layout */
+grid-template-columns: 1fr 1fr; /* Two columns */
+margin: 20px auto; /* Center and add margin */
+gap: 20px; /* Space between columns */
+}
+.login-box, .social-box { /* Sections styling */
+border: 1px solid lightgray; /* Light border */
+padding: 20px; /* Inner spacing */
+}
+.input{ /* Input fields */
+padding: 14px 15px; /* Inner padding */
+border:none; /* No border */
+border-radius: 12px; /* Rounded corners */
+background: #e0e5ec; /* Light background */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+outline: none; /* Remove outline */
+font-size: 14px; /* Text size */
+width: 500px; /* Input width */
+text-align: center; /* Center text */
+display: grid; /* Grid for alignment */
+place-items: center; /* Center content */
+margin-bottom: 40px; /* Space below */
+}
+button, select { /* Button styling */
+padding: 14px; /* Inner padding */
+border:none; /* No border */
+border-radius: 12px; /* Rounded corners */
+background: #e0e5ec; /* Button color */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+cursor: pointer; /* Pointer on hover */
+font-weight: 840; /* Bold text */
+transition: 0.3s ease; /* Smooth hover effect */
+color: #000080; /* Blue text */
+width: 100px; /* Fixed width */
+display: block; /* Block element */
+margin: 20px auto; /* Center button */
+}
+button:hover { /* Button hover effect */
+background: #d1d9e6; /* Change color */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+transform: scale(0.97); /* Slight shrink */
+}
+select:hover { /* Button hover effect */
+background: #d1d9e6; /* Change color */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+transform: scale(0.97); /* Slight shrink */
+}
+.social-box a { /* Social links */
+margin: 10px; /* Outer space */
+padding: 14px; /* Inner padding */
+border:none; /* No border */
+text-decoration: none; /* Remove underline */
+border-radius: 12px; /* Rounded corners */
+background: #e0e5ec; /* Light background */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+cursor: pointer; /* Pointer cursor */
+font-weight: bold; /* Bold text */
+transition: 0.3s ease; /* Smooth hover effect */
+color: #000080; /* Blue text */
+width: 100px; /* Fixed width */
+}
+.social-box a:hover { /* Hover for social links */
+background: #d1d9e6; /* Change color */
+box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+transform: scale(0.97); /* Slight shrink */
+}
+.video {
+ margin-top: 30px;
+ margin-bottom: 20px; 
+ position: relative; /* to use width and height */ 
+ padding-bottom: 56.25%; /* 16:9 */
+ height: 0; 
+ overflow: hidden; /* hidden any .. */}
+
+.video iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%; /* complate width */
+ height: 100%; 
+ border: 0; /* remove border */
+ }
+#menu { /* Dropdown container */
+position: relative; /* Relative for menu positioning */
+display: inline-block; /* Inline element */
+margin-left: 5px;
+/* Dropdown button */
+padding: 10px 20px; /* Inner padding */
+font-size: 14px; /* Text size */
+border: none; /* No border */
+cursor: pointer; /* Pointer cursor */
+width: 220px; /* Fixed width */
+}
+footer { /* Footer section */
+padding: 20px; /* Inner spacing */
+text-align: center; /* Center text */
+background: #003399; /* Blue background */
+color:white; /* White text */
+}
+/* Table unified style */
+table {
+width: 98%;
+border-collapse: collapse;
+margin: 10px;
+font-size: 16px;
+}
+table th {
+background-color: #99ccff;
+color: black;
+padding: 12px;
+}
+table td {
+background-color: #e0e5ec;
+color: #000080;
+padding: 12px;
+text-align: center;
+}
+.info-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+margin-top: 10px;
+}
+.right-logout {
+margin-right: 5px;
+height: 44px;
+padding: 0 18px;
+}
+.info-row select,
+.info-row button {
+height: 44px;
+box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) { /* Responsive layout */
+.content{
+grid-template-columns: 1fr; /* One column on small screens */
+}
+.nav {
+margin-top: 10px; /* Add top margin */
+}
+.input {
+width: 400px; /* Smaller input width */
+}
+}
