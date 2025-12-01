@@ -1,155 +1,175 @@
-html, body {
- width: 100%; overflow-x: hidden; 
- font-family: Arial, sans-serif;
- margin: 0;
- padding: 0;
+body { /* Page body styles */
+ font-family: Arial; /* Set font */
+ margin: 0; /* Remove default margin */
 }
 
+.header, footer { width: 100vw; 
+}
+body { overflow-x: hidden; 
+}
+
+/* Header section */
 .header {
- background: #003399;
- color: white;
- padding: 20px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- flex-wrap: wrap; width: 100vw; 
- }
-.header-top {
- display: flex;
- align-items: center;
- gap: 30px;
-}
-img {
- width: 60px;
- height: auto;
-}
-.nav {
- display: flex;
- flex-wrap: wrap;
- margin: 0;
+ background: #003399; /* Blue background */
+ color: white; /* White text */
+ padding: 20px; /* Inner spacing */
+ display: flex; /* Flexbox layout */
+ align-items: center; /* Center items vertically */
+ justify-content: space-between; /* Space between items */
+ flex-wrap: wrap; /* Wrap when needed */
 }
 
-.nav a {
- margin: 10px;
- padding: 14px;
- border: none;
- text-decoration: none;
- border-radius: 12px;
- background: #e0e5ec;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6;
- cursor: pointer;
- font-weight: bold;
- transition: 0.3s ease;
- color: #000080;
- width: 100px;
-}
-.nav a:hover {
- background: #d1d9e6;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
- transform: scale(0.97);
-}
-.content {
- width: 100%;
- display: grid;
- grid-template-columns: 1fr 1fr;
- margin: 20px auto;
- gap: 20px;
-}
-.login-box, .social-box {
- border: 1px solid lightgray;
- padding: 20px;
-}
-.input {
- padding: 14px 15px;
- border: none;
- border-radius: 12px;
- background: #e0e5ec;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6;
- outline: none;
- font-size: 14px;
- width: 500px;
- text-align: center;
- display: grid;
- place-items: center;
- margin-bottom: 40px;
-}
-button, select {
- padding: 14px;
- border: none;
- border-radius: 12px;
- background: #e0e5ec;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6;
- cursor: pointer;
- font-weight: 840;
- transition: 0.3s ease;
- color: #000080;
- width: 100px;
- display: block;
- margin: 20px auto;
-}
-button:hover, select:hover {
- background: #d1d9e6;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
- transform: scale(0.97);
-}
-.social-box a {
- margin: 10px;
- padding: 14px;
- border: none;
- text-decoration: none;
- border-radius: 12px;
- background: #e0e5ec;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6;
- cursor: pointer;
- font-weight: bold;
- transition: 0.3s ease;
- color: #000080;
- width: 100px;
+.header-top { /* Header top area */
+ display: flex; /* Flexbox layout */
+ align-items: center; /* Vertically center */
+ gap: 30px; /* Space between items */
 }
 
-.social-box a:hover {
- background: #d1d9e6;
- box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
- transform: scale(0.97);
+img { /* Logo image */
+ width: 60px; /* Image width */
+ height: auto; /* Keep aspect ratio */
+}
+
+.nav { /* Navigation bar */
+ display: flex; /* Horizontal layout */
+ margin:10px; /* Outer margin */
+}
+
+.nav a{ /* Nav links */
+ margin: 30px; /* Space around links */
+ padding: 14px; /* Inner padding */
+ border:none; /* Remove border */
+ text-decoration: none; /* No underline */
+ border-radius: 12px; /* Rounded corners */
+ background: #e0e5ec; /* Light background */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+ cursor: pointer; /* Pointer cursor */
+ font-weight: bold; /* Bold text */
+ transition: 0.3s ease; /* Smooth hover effect */
+ color: #000080; /* Dark blue text */
+ width: 100px; /* Fixed width */
+}
+
+.nav a:hover { /* Hover effect for nav links */
+ background: #d1d9e6; /* Lighter background */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+ transform: scale(0.97); /* Slight shrink */
+}
+
+.content { /* Main content layout */
+ width: 100%; /* Full width */
+ display: grid; /* Grid layout */
+ grid-template-columns: 1fr 1fr; /* Two columns */
+ margin: 20px auto; /* Center and add margin */
+ gap: 20px; /* Space between columns */
+}
+
+.login-box, .social-box { /* Sections styling */
+ border: 1px solid lightgray; /* Light border */
+ padding: 20px; /* Inner spacing */
+}
+
+.input{ /* Input fields */
+ padding: 14px 15px; /* Inner padding */
+ border:none; /* No border */
+ border-radius: 12px; /* Rounded corners */
+ background: #e0e5ec; /* Light background */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+ outline: none; /* Remove outline */
+ font-size: 14px; /* Text size */
+ width: 500px; /* Input width */
+ text-align: center; /* Center text */
+ display: grid; /* Grid for alignment */
+ place-items: center; /* Center content */
+ margin-bottom: 40px; /* Space below */
+}
+
+button, select { /* Button styling */
+ padding: 14px; /* Inner padding */
+ border:none; /* No border */
+ border-radius: 12px; /* Rounded corners */
+ background: #e0e5ec; /* Button color */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+ cursor: pointer; /* Pointer on hover */
+ font-weight: 840; /* Bold text */
+ transition: 0.3s ease; /* Smooth hover effect */
+ color: #000080; /* Blue text */
+ width: 100px; /* Fixed width */
+ display: block; /* Block element */
+ margin: 20px auto; /* Center button */
+}
+
+button:hover { /* Button hover effect */
+ background: #d1d9e6; /* Change color */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+ transform: scale(0.97); /* Slight shrink */
+}
+
+select:hover { /* Button hover effect */
+ background: #d1d9e6; /* Change color */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+ transform: scale(0.97); /* Slight shrink */
+}
+
+.social-box a { /* Social links */
+ margin: 10px; /* Outer space */
+ padding: 14px; /* Inner padding */
+ border:none; /* No border */
+ text-decoration: none; /* Remove underline */
+ border-radius: 12px; /* Rounded corners */
+ background: #e0e5ec; /* Light background */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #e6e6e6; /* Inner shadow */
+ cursor: pointer; /* Pointer cursor */
+ font-weight: bold; /* Bold text */
+ transition: 0.3s ease; /* Smooth hover effect */
+ color: #000080; /* Blue text */
+ width: 100px; /* Fixed width */
+}
+
+.social-box a:hover { /* Hover for social links */
+ background: #d1d9e6; /* Change color */
+ box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff; /* Change shadow */
+ transform: scale(0.97); /* Slight shrink */
 }
 
 .video {
  margin-top: 30px;
- margin-bottom: 20px;
- position: relative;
- padding-bottom: 56.25%;
- height: 0;
- overflow: hidden;
+ margin-bottom: 20px; 
+ position: relative; /* to use width and height */ 
+ padding-bottom: 56.25%; /* 16:9 */
+ height: 0; 
+ overflow: hidden; 
 }
 
 .video iframe {
  position: absolute;
  top: 0;
  left: 0;
- width: 100%;
- height: 100%;
- border: 0;
+ width: 100%; /* complate width */
+ height: 100%; 
+ border: 0; /* remove border */
 }
 
-#menu {
- position: relative;
- display: inline-block;
+#menu { /* Dropdown container */
+ position: relative; /* Relative for menu positioning */
+ display: inline-block; /* Inline element */
  margin-left: 5px;
- padding: 10px 20px;
- font-size: 14px;
- border: none;
- cursor: pointer;
- width: 220px;
+ /* Dropdown button */
+ padding: 10px 20px; /* Inner padding */
+ font-size: 14px; /* Text size */
+ border: none; /* No border */
+ cursor: pointer; /* Pointer cursor */
+ width: 220px; /* Fixed width */
 }
 
-footer {
- padding: 20px;
- text-align: center;
- background: #003399;
- color: white;
- width: 100vw;
+footer { /* Footer section */
+ padding: 20px; /* Inner spacing */
+ text-align: center; /* Center text */
+ background: #003399; /* Blue background */
+ color:white; /* White text */
 }
 
+/* Table unified style */
 table {
  width: 98%;
  border-collapse: collapse;
@@ -190,17 +210,23 @@ table td {
  box-sizing: border-box;
 }
 
-/* Responsive */
-@media screen and (max-width: 600px) {
- .content {
- grid-template-columns: 1fr;
+@media screen and (max-width: 600px) { /* Responsive layout */
+ .content{
+ grid-template-columns: 1fr; /* One column on small screens */
  }
-
  .nav {
- margin-top: 10px;
+ margin-top: 10px; /* Add top margin */
  }
+ .nav a {
+	 width:80px;
+ }
+ .input {
+ width: 400px; /* Smaller input width */
+ }
+}
 
  .input {
  width: 400px;
  }
 }
+
