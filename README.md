@@ -21,7 +21,7 @@ Enable Apache and MySQL,
 Place the project in the following folder:
 htdocs,
 Open your browser and type:
-http://localhost/college_connect-main/index.html
+http://localhost/college_connect-main/home.html
 
 - Login details:
 Username: admin
