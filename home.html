@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en">
+<head>
+<title>Home page</title> <!-- Page title -->
+<meta charset="UTF-8"> <!-- Character encoding -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive layout -->
+<link rel="stylesheet" type="text/css" href="style.css"/> <!-- Link CSS file -->
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+
+<div class="header-top">
+<img src="logo_of_college.png" alt="logo of college"/> <!-- College logo -->
+<h1>International Technical College-Portal</h1> <!-- Main heading -->
+</div>
+
+<!-- Navigation bar -->
+<nav class="nav">
+<a href="home.html">Home</a> <!-- Home link -->
+<a href="home.html">Login</a> <!-- Login link -->
+</nav>
+</header>
+
+<!-- Main content -->
+<main class="content">
+
+<!-- Login Section -->
+<section class="login-box">
+<h2>Welcome to our college!</h2> <!-- Section title -->
+<p>Please login</p> <!-- Instruction -->
+
+<form id="login"> <!-- Login form -->
+<input type="text" id="username" class="input" placeholder="Enter Username" required> <!-- Username field -->
+<input type="password" id="password" class="input" placeholder="Enter Password" required> <!-- Password field -->
+<button type="submit">Login</button> <!-- Submit button -->
+</form>
+
+<script>
+const correctUsername = 'admin'; // Valid username
+const correctPassword = '12345'; // Valid password
+
+document.getElementById('login').addEventListener('submit', function(e) { // On form submit
+e.preventDefault(); // Stop page reload
+const username = document.getElementById('username').value; // Get username
+const password = document.getElementById('password').value; // Get password
+
+if (username === correctUsername && password === correctPassword) { // Check credentials
+alert('Login Successful'); // Success message
+localStorage.setItem('loggedIn', 'true'); // Save login status
+window.location.href = 'info.html'; // Redirect to info page
+} else {
+alert('Invalid Credentials'); // Error message
+}
+});
+</script>
+</section>
+
+<!-- Social Section -->
+<section class="social-box">
+<h2>Social & Media</h2> <!-- Section title -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+ src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+</script>
+<div class="fb-page"
+ data-href="https://www.facebook.com/ITCKSA/"
+ data-tabs="timeline"
+ data-width="600"
+ data-height="300"
+ data-small-header="false"
+ data-adapt-container-width="true"
+ data-hide-cover="false"
+ data-show-facepile="true">
+
+ <blockquote cite="https://www.facebook.com/ITCKSA/" class="fb-xfbml-parse-ignore"> <a href="https://www.facebook.com/ITCKSA/"></a> </blockquote>
+</div>
+
+<!-- YouTube embedded -->
+<div class="video">
+<iframe width="600" height="350"
+src="https://www.youtube.com/embed/LlCwHnp3kL4?si=24RCwBKVE9hCoUoy"
+title="YouTube video" allowfullscreen></iframe> <!-- Embedded video -->
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<p>@2025 Developed by Nayla Hadi</p> <!-- Footer text -->
+</footer>
+
+</body>
+</html>
