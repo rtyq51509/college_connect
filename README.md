@@ -1,5 +1,5 @@
 ## Setup Requirements
-- Download the project from GitHub: https://rtyq51509.github.io/college_connect/
+- Download the project from GitHub:
 Click on Code,
 Select Download ZIP,
 Extract the file.
