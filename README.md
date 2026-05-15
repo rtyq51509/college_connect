@@ -1,7 +1,6 @@
 ## Setup Requirements
-- Download the project from GitHub:https://github.com/rtyq51509/college_connect/releases/tag/CollegeConnect
-Click on Code,
-Select Download ZIP,
+Download the latest version from GitHub Releases: https://github.com/rtyq51509/college_connect/releases/tag/CollegeConnect
+Click on the first link,
 Extract the file.
 
 - Basic requirements:
